@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somente perguntinhas bobas meu bem 💖</title>
+  <title>Somente perguntinhas bobas meu bem :}</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-  <h1>Somente perguntinhas bobas meu bem 💖</h1>
+  <h1>Somente perguntinhas bobas meu bem :}</h1>
   <p id="pergunta"></p>
   <div id="botoes">
     <!-- Botões serão gerados aqui -->
@@ -58,14 +58,212 @@
         messageWrong: "Ouch, tenta de novo!"
       },
       {
-        pergunta: "Qual é a cor do nosso amor?",
+        pergunta: "Qual é a minha cor favoritaa?",
         opcoes: [
-          { texto: "Vermelho", correct: true },
-          { texto: "Azul", correct: false }
+          { texto: "Vermelho", correct: false },
+          { texto: "Azul", correct: true }
         ],
-        messageCorrect: "Exato! Nosso amor é paixão!",
-        messageWrong: "Hmm, não é essa, tenta de novo!"
-      }
+        messageCorrect: "UHUUUUUUU",
+        messageWrong: "que padão amor"
+      },
+      {
+        pergunta: "Qual q é o melhor horário pra fazer um pedido?",
+        opcoes: [
+          { texto: "4:47", correct: true },
+          { texto: "4:43", correct: false }
+        ],
+        messageCorrect: "anavit - ória 📍",
+        messageWrong: "td bem, tbm confundo rs"
+      },
+      {
+        pergunta: "ablublublé",
+        opcoes: [
+          { texto: "concordo em partes", correct: true },
+          { texto: "vc eh maluco", correct: false }
+        ],
+        messageCorrect: "EU TE AMOOOO",
+        messageWrong: ":O (vc me odeia)"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
+      {
+        pergunta: "Qual fruta eu gosto mais?",
+        opcoes: [
+          { texto: "Moranguinhos", correct: true },
+          { texto: "Abacaxizinho", correct: false }
+        ],
+        messageCorrect: "Parabéns, amorr <3",
+        messageWrong: "Ouch, tenta de novo!"
+      },
       // Adicione mais perguntas conforme desejar...
     ];
 
