@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz do Nosso Amor 💖</title>
+    <title>Somente perguntinhas bobas meu bem 💖</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,11 +38,11 @@
 </head>
 <body>
 
-    <h1>Quiz do Nosso Amor 💖</h1>
-    <p id="pergunta">Pergunta 1</p> <!-- Edite aqui -->
+    <h1>Somente perguntinhas bobas meu bem 💖</h1>
+    <p id="pergunta">Qual fruta eu gosto mais?</p> <!-- Edite aqui -->
 
-    <button class="botao" onclick="verificarResposta(true)">Opção Correta</button> <!-- Edite aqui -->
-    <button class="botao" onclick="verificarResposta(false)">Opção Errada</button> <!-- Edite aqui -->
+    <button class="botao" onclick="verificarResposta(true)">Moranguinhos</button> <!-- Edite aqui -->
+    <button class="botao" onclick="verificarResposta(false)">Abacaxizinho</button> <!-- Edite aqui -->
 
     <p id="resultado"></p>
 
@@ -50,9 +50,9 @@
         function verificarResposta(acertou) {
             let resultado = document.getElementById("resultado");
             if (acertou) {
-                resultado.innerText = "CORRETA ✅";
+                resultado.innerText = "Parabéns amorr <3";
             } else {
-                resultado.innerText = "INCORRETA ❌";
+                resultado.innerText = "ouch, tenta de novoo";
             }
         }
     </script>
