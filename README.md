@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somente perguntinhas bobas meu bem :}</title>
+  <title>Somente perguntinhas bobas meu bem 💖</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,20 +11,31 @@
       background-color: #ffe6e6;
       padding: 50px;
     }
+    #inicio {
+      display: block;
+    }
+    #quiz {
+      display: none;
+    }
     #pergunta {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 20px;
     }
+    .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
     .botao {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 15px;
-      font-size: 18px;
+      padding: 15px 25px;
+      font-size: 20px;
       border: none;
       background-color: #ff4d4d;
       color: white;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 10px;
+      width: 150px;
     }
     .botao:hover {
       background-color: #cc0000;
@@ -34,292 +45,89 @@
       font-weight: bold;
       margin-top: 20px;
     }
+    #botao-inicio {
+      padding: 15px 30px;
+      font-size: 22px;
+      border: none;
+      background-color: #ff4d4d;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #botao-inicio:hover {
+      background-color: #cc0000;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Somente perguntinhas bobas meu bem :}</h1>
-  <p id="pergunta"></p>
-  <div id="botoes">
-    <!-- Botões serão gerados aqui -->
+  <!-- Tela Inicial -->
+  <div id="inicio">
+    <h1>Um quiz planejado no nosso amor 💖</h1>
+    <p>Vamos ver o quanto você me conhece, meu bem!</p>
+    <button id="botao-inicio" onclick="iniciarQuiz()">Começar</button>
   </div>
-  <p id="resultado"></p>
+
+  <!-- Quiz -->
+  <div id="quiz">
+    <h1>Somente perguntinhas bobas meu bem 💖</h1>
+    <p id="pergunta"></p>
+    <div class="botoes" id="botoes"></div>
+    <p id="resultado"></p>
+  </div>
 
   <script>
-    // Array de perguntas e respostas
     const questions = [
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual é a minha cor favoritaa?",
-        opcoes: [
-          { texto: "Vermelho", correct: false },
-          { texto: "Azul", correct: true }
-        ],
-        messageCorrect: "UHUUUUUUU",
-        messageWrong: "que padão amor"
-      },
-      {
-        pergunta: "Qual q é o melhor horário pra fazer um pedido?",
-        opcoes: [
-          { texto: "4:47", correct: true },
-          { texto: "4:43", correct: false }
-        ],
-        messageCorrect: "anavit - ória 📍",
-        messageWrong: "td bem, tbm confundo rs"
-      },
-      {
-        pergunta: "ablublublé",
-        opcoes: [
-          { texto: "concordo em partes", correct: true },
-          { texto: "vc eh maluco", correct: false }
-        ],
-        messageCorrect: "EU TE AMOOOO",
-        messageWrong: ":O (vc me odeia)"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      {
-        pergunta: "Qual fruta eu gosto mais?",
-        opcoes: [
-          { texto: "Moranguinhos", correct: true },
-          { texto: "Abacaxizinho", correct: false }
-        ],
-        messageCorrect: "Parabéns, amorr <3",
-        messageWrong: "Ouch, tenta de novo!"
-      },
-      // Adicione mais perguntas conforme desejar...
+      { pergunta: "Qual fruta eu gosto mais?", opcoes: [{ texto: "Moranguinhos", correct: true }, { texto: "Abacaxizinho", correct: false }] },
+      { pergunta: "Qual é minha cor favorita?", opcoes: [{ texto: "Vermelho", correct: true }, { texto: "Azul", correct: false }] },
+      { pergunta: "O que eu mais gosto de fazer no tempo livre?", opcoes: [{ texto: "Jogar", correct: true }, { texto: "Ler", correct: false }] },
+      { pergunta: "Qual minha sobremesa favorita?", opcoes: [{ texto: "Chocolate", correct: true }, { texto: "Torta de limão", correct: false }] }
     ];
 
     let currentQuestionIndex = 0;
 
-    // Função para mostrar a pergunta atual
+    function iniciarQuiz() {
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("quiz").style.display = "block";
+      showQuestion();
+    }
+
     function showQuestion() {
       const questionElement = document.getElementById("pergunta");
       const buttonsDiv = document.getElementById("botoes");
       const resultadoElement = document.getElementById("resultado");
-
-      // Limpa a mensagem de resultado
+      
       resultadoElement.innerText = "";
-
-      // Atualiza o texto da pergunta
       questionElement.innerText = questions[currentQuestionIndex].pergunta;
-
-      // Limpa botões antigos
       buttonsDiv.innerHTML = "";
 
-      // Cria os botões de opção
       questions[currentQuestionIndex].opcoes.forEach(opcao => {
         const button = document.createElement("button");
         button.className = "botao";
         button.innerText = opcao.texto;
-        button.onclick = function() {
-          verificarResposta(opcao.correct);
-        };
+        button.onclick = function() { verificarResposta(opcao.correct); };
         buttonsDiv.appendChild(button);
       });
     }
 
-    // Função para verificar a resposta
     function verificarResposta(acertou) {
       const resultadoElement = document.getElementById("resultado");
       if (acertou) {
-        resultadoElement.innerText = questions[currentQuestionIndex].messageCorrect;
-        // Após um delay, passa para a próxima pergunta
+        resultadoElement.innerText = "Parabéns, amorr <3";
         setTimeout(() => {
           currentQuestionIndex++;
           if (currentQuestionIndex < questions.length) {
             showQuestion();
           } else {
-            // Fim do quiz
-            document.getElementById("pergunta").innerText = "";
+            document.getElementById("pergunta").innerText = "Você completou o quiz! Parabéns!";
             document.getElementById("botoes").innerHTML = "";
-            resultadoElement.innerText = "Você completou o quiz! Parabéns!";
+            resultadoElement.innerText = "";
           }
-        }, 1500); // 1.5 segundos de delay
+        }, 1500);
       } else {
-        resultadoElement.innerText = questions[currentQuestionIndex].messageWrong;
+        resultadoElement.innerText = "Ouch, tenta de novo!";
       }
     }
-
-    // Inicia o quiz mostrando a primeira pergunta
-    showQuestion();
   </script>
 
 </body>
