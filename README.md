@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somente perguntinhas bobas meu bem 💖</title>
+  <title>Somente perguntinhas bobinhaaaas :}</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -63,14 +63,14 @@
 
   <!-- Tela Inicial -->
   <div id="inicio">
-    <h1>Um quiz planejado no nosso amor 💖</h1>
+    <h1>Um quiz feito sobre nosso amor 💖</h1>
     <p>Vamos ver o quanto você me conhece, meu bem!</p>
     <button id="botao-inicio" onclick="iniciarQuiz()">Começar</button>
   </div>
 
   <!-- Quiz -->
   <div id="quiz">
-    <h1>Somente perguntinhas bobas meu bem 💖</h1>
+    <h1>Somente perguntinhas bobinhaaaas :}</h1>
     <p id="pergunta"></p>
     <div class="botoes" id="botoes"></div>
     <p id="resultado"></p>
@@ -79,9 +79,9 @@
   <script>
     const questions = [
       { pergunta: "Qual fruta eu gosto mais?", opcoes: [{ texto: "Moranguinhos", correct: true }, { texto: "Abacaxizinho", correct: false }] },
-      { pergunta: "Qual é minha cor favorita?", opcoes: [{ texto: "Vermelho", correct: true }, { texto: "Azul", correct: false }] },
+      { pergunta: "Qual é minha cor favorita?", opcoes: [{ texto: "Vermelho", correct: false }, { texto: "Azul", correct: true }] },
       { pergunta: "O que eu mais gosto de fazer no tempo livre?", opcoes: [{ texto: "Jogar", correct: true }, { texto: "Ler", correct: false }] },
-      { pergunta: "Qual minha sobremesa favorita?", opcoes: [{ texto: "Chocolate", correct: true }, { texto: "Torta de limão", correct: false }] }
+      { pergunta: "Qual minha sobremesa favorita?", opcoes: [{ texto: "Torta de limão", correct: true }, { texto: "Chocolate", correct: false }] }
     ];
 
     let currentQuestionIndex = 0;
@@ -119,7 +119,7 @@
           if (currentQuestionIndex < questions.length) {
             showQuestion();
           } else {
-            document.getElementById("pergunta").innerText = "Você completou o quiz! Parabéns!";
+            document.getElementById("pergunta").innerText = "PARABÉNS AMOOOOR!! EU AMO VOCÊ!";
             document.getElementById("botoes").innerHTML = "";
             resultadoElement.innerText = "";
           }
